@@ -157,7 +157,11 @@ const game = () => {
 
     const playAgain = prompt("Do you want to play again (y/n)? ");
 
-    if (playAgain != "y") break;
+    if (playAgain != "y") {
+      console.log("You have a balance of $" + balance);
+      console.log("Thank you for Playing.")
+      break;
+    }
   }
 };
 
